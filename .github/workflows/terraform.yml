@@ -1,3 +1,4 @@
+---
 - name: HashiCorp - Setup Terraform
   # You may pin to the exact commit or the version.
   # uses: hashicorp/setup-terraform@d22444889af304a44b997011fbabb81ff705a7b4
