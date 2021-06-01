@@ -7,5 +7,5 @@ variable "separator" {
 }
 
 variable "length" {
-    default = "5"
+    default = "2"
 }
