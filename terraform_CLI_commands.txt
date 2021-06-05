@@ -1,0 +1,17 @@
+terraform version                                       To display the version of terraform. 
+terraform init                                          To itialize the configuration file and get the providers to the configuration directory. 
+terraform plan                                          To generate and show the execution plan (dry run).
+terraform plan -refresh=false                           To not to get the latest state of the infrastructure.                                          
+terraform apply                                         To apply the infrastructure changes mentioned in the configuration plan (run).
+terraform apply -refresh=flase                          To make changes to the infrastructure with out refreshing to its laetst state.
+terraform validate                                      To check the syntax of terraform configuration.
+terraform show                                          To print the current state of the infrastructure as terraform last knows.
+terraform show -json                                    Json formatted current state infiormation of an infrastructure.
+terraform output                                        To display all output variables of a configuration. 
+terraform output <variable_name>            	        To display only one particular output variable of a configuration directory. 
+terraform fmt                                           Formats the configurations file for better readability (tabs and indentations).
+terraform graph                                         To create representatio of the dependencies in terraform configurartion files or execution plan. 
+terraform graph | dot -Tpdf > <file_name.pdf>           To create visual representation of graph output. install graphviz package before running this command. 
+terraform providers                                     To display all the providers in the configuration directory. Must run "terraform init" command before running this.
+terraform providers mirror <directory_path>             To copy the providers plugins to another directory.
+terraform refresh                                       Refreshes the state, to pull any updates that are not done thru terraform.
